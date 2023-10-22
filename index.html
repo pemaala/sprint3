@@ -7,41 +7,325 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@300&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+        <!-- Código para la instalación de iconos de Font Awesome -->
+        <script src="https://kit.fontawesome.com/63cce3f8bd.js" crossorigin="anonymous"></script>
+        <!-- Código para Bootstrap: elementos usados: Badge "NEW" en el último heading de la sección de servicios, y Toast -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="/imagenes/logo.png" alt="logo de la compañía" srcset="">
+                <img src="imagenes/cuerpo/logo.png" alt="logo de la compañía" srcset="">
             </div>
+            <input type="checkbox" id="nav_check" hidden>
             <nav>
                 <ul class="navi">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#tarifas">Tarifas</a></li>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#profesionales">Profesionales</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#reseñas">Reseñas</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#sobre nosotros">Sobre nosotros</a></li>
                 </ul>
             </nav>
+            <label for="nav_check" class="hamburguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
         </header>
         <main>
-            <div id="container">
+
+            <!-- Inicio caja de introducción a la página web -->
+            <section class="inicio">
                 <div class="box">
                     <div class="descripcion">
-                        <img class="img-desc" src="./imagenes/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.webp" alt="programador" srcset="">
-                        <h1  class="titulo-desc">BIENVENIDO</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis blanditiis amet eius sit aut, quos maxime quo reprehenderit non molestiae ducimus aperiam earum dolor, adipisci excepturi quas architecto? Corporis, voluptatibus!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat eveniet impedit consectetur illo aspernatur praesentium officia facere numquam dolore tempore, quod soluta doloremque vitae voluptas, error velit, omnis temporibus!</p>
+                        <!-- Borrado: <img class="img-desc" src="/imagenes/primer sprint/imagen primer sprint.webp" alt="programador" srcset=""> -->
+                        <h1  class="titulo-desc">Programando el futuro, un código a la vez</h1>
+                        <p>Más de 200 profesionales capacitados para ofrecer eficientes e innovadores servicios de programación.</p>
                     </div>
                     <div class="botones">
                         <a href="#" class="button">Contratar Servicio</a></button>
                         <a href="#" class="button">Saber Más</a></button>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- Fin caja de introducción a la página web -->
+
+            <!-- Inicio sección profesionales -->
+            <section id="profesionales">
+                <div class="dcontainer">
+                    <!-- título de sección-->
+                        <h1 class="encabezado1">Nuestros Profesionales</h1>
+                    <!-- Tarjeta de diseñador -->
+                    <div class="dcard">
+                        <img class="davatar" src="imagenes/imagen de perfil programadores/programador1.jpg" alt="" srcset="">
+                        <div class="dinfo">
+                            <h1>Oscar Codefield</h1>
+                            <h2><u>Área</u>: Software Empresarial</h2>
+                        </div>
+                        <div class="dcdesc">
+                            <p>Su enfoque se centra en optimizar procesos, mejorar la productividad y potenciar el crecimiento empresarial a través de la tecnología.</p>
+                            <button class="btn"><a href="">Más información</a></button>
+                        </div>
+                    </div>
+                    <!-- Fin de tarjeta de diseñador -->
+
+                    <!-- Tarjeta de diseñador -->
+                    <div class="dcard">
+                        <img class="davatar" src="imagenes/imagen de perfil programadores/programadora1.jpg" alt="" srcset="">
+                        <div class="dinfo">
+                            <h1>Lola Debugson</h1>
+                            <h2><u>Área</u>: IA y Machine Learning</h2>
+                        </div>
+                        <div class="dcdesc">
+                            <p>Especialista en Inteligencia Artificial y Aprendizaje Automático, con experiencia en desarrollar algoritmos inteligentes y soluciones innovadoras para desafíos empresariales complejos.</p>
+                            <button class="btn"><a href="">Más información</a></button>
+                        </div>
+                    </div>
+                    <!-- Fin de tarjeta de diseñador -->
+
+                    <!-- Tarjeta de diseñador -->
+                    <div class="dcard">
+                        <img class="davatar" src="imagenes/imagen de perfil programadores/programador2.jpg" alt="" srcset="">
+                        <div class="dinfo">
+                            <h1>Juan Pixelman</h1>
+                            <h2><u>Área</u>: Desarrollo web</h2>
+                        </div>
+                        <div class="dcdesc">
+                            <p>Apasionado por transformar ideas en realidad a través del poder del código. Experto en desarrollo de páginas web innovadoras.</p>
+                            <button class="btn"><a href="">Más información</a></button>
+                        </div>
+                    </div>
+                    <!-- Fin de tarjeta de diseñador -->
+
+                    <!-- Tarjeta de diseñador -->
+                    <div class="dcard">
+                        <img class="davatar" src="/imagenes/imagen de perfil programadores/programadora2.jpg" alt="" srcset="">
+                        <div class="dinfo">
+                            <h1>Sofía Scriptwood</h1>
+                            <h2><u>Área</u>: Desarrollo de juegos</h2>
+                        </div>
+                        <div class="dcdesc">
+                            <p>Es una apasionada desarrolladora de juegos con una mente creativa y un amor por la innovación. Su misión es crear experiencias de juego inmersivas y emocionantes que cautiven a los jugadores.</p>
+                            <button class="btn"><a href="">Más información</a></button>
+                        </div>
+                    </div>
+                    <!-- Fin de tarjeta de diseñador -->
+                </div>
+            </section>
+
+            <!-- Fin sección diseñadores -->
+
+             
+            <!-- Inicio sección servicios -->
+            <section id="servicios">
+                <!-- Título de la sección -->
+                <div class="scontainer">
+                    <h1 class="encabezado2">Nuestros servicios</h1>
+                    <!-- Tarjeta de servicio -->
+                    <div class="scard">
+                        <i class="fa fa-html5" style="font-size:24px;"></i>
+                        <h1  class="titulo-scard">Desarrollo Web</u></h1>
+                        <p>Creación de sitios web y aplicaciones web interactivas.</p>
+                    </div>
+                    <!-- Fin tarjeta de servicio -->
+
+                    <!-- Tarjeta de servicio -->   
+                    <div class="scard">
+                        <i class="fa fa-mobile" style="font-size:24px;"></i>
+                        <h1  class="titulo-scard">Desarrollo de Aplicaciones Móviles</u></h1>
+                        <p>Creación de aplicaciones para dispositivos móviles.</p>
+                    </div>
+                    <!-- Fin tarjeta de servicio -->
+
+                     <!-- Tarjeta de servicio -->
+                     <div class="scard">
+                        <i class="fa fa-gamepad" style="font-size:24px;"></i>
+                        <h1  class="titulo-scard">Desarrollo de Juegos</u></h1>
+                        <p>Creación de videojuegos para consolas, computadoras y dispositivos móviles.</p>
+                    </div>
+                    <!-- Fin tarjeta de servicio -->
+
+                    <!-- Tarjeta de servicio -->
+                    <div class="scard">
+                        <i class="fa-solid fa-robot" style="font-size:24px;"></i>
+                        <h1  class="titulo-scard">Inteligencia Artificial y Aprendizaje Automático</u></h1>
+                        <p>Desarrollo de modelos de aprendizaje automático y automatización inteligente de procesos.</p>
+                    </div>
+                    <!-- Fin tarjeta de servicio -->
+
+                    <!-- Tarjeta de servicio -->   
+                    <div class="scard">
+                        <i class="fa-solid fa-briefcase" style="font-size:24px;"></i>
+                        <h1  class="titulo-scard">Desarrollo de Software Empresarial </u></h1>
+                        <p>Desarrollo de Sistemas ERP y CRM y Seguridad Informática Empresarial.</p>
+                    </div>
+                    <!-- Fin tarjeta de servicio -->
+
+                    <!-- Tarjeta de servicio -->
+                    <div class="scard">
+                        <i class="fa-solid fa-vr-cardboard" style="font-size:24px;"></i>
+                        <h1  class="titulo-scard">Realidad Virtual y Realidad Aumentada </u><span class="badge bg-danger">New</span></h1>
+                        <p>Creación de experiencias inmersivas usando tecnologías de VR y AR.</p>
+                    </div>
+                    <!-- Fin tarjeta de servicio -->
+
+                </div>
+            </section>
+            <!-- Fin sección servicios -->
+
+            <section id="reseñas">
+                <div class="comentarios">
+                    <h1>Ellos nos eligen</h1>
+                </div>
+                <div class="cdc">  <!-- cdc: caja de comentarios -->
+                    <!-- inicio caja1 -->
+                    <div class="caja">
+                        <div class="infocliente">
+                            <div class="perfil">
+                                <div class="avatar">
+                                    <img src="imagenes/imagen de perfil comentarios/comentario1.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="nombre">
+                                <h1>Natalia Rodriguez</h1>
+                                <h2>@natrodriguez</h2>
+                            </div>
+                            <div class="estrellas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comentario">
+                            <p>"Sofía es una desarrolladora de juegos increíblemente talentosa. Su habilidad para combinar una jugabilidad adictiva con gráficos deslumbrantes es algo que realmente destaca. Nos ayudó a crear un juego que se ha vuelto viral en poco tiempo, y nuestros usuarios simplemente lo adoran. Es creativa, receptiva y un verdadero placer trabajar con ella. ¡Gracias por hacer nuestro juego un éxito!</p>
+                        </div>
+                    </div>
+                    <!-- fin caja1 -->
+
+                    <!-- inicio caja2 -->
+                    <div class="caja">
+                        <div class="infocliente">
+                            <div class="perfil">
+                                <div class="avatar">
+                                    <img src="imagenes/imagen de perfil comentarios/comentario2.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="nombre">
+                                <h1>Jorge Álvarez</h1>
+                                <h2>@jalvarez89</h2>
+                            </div>
+                            <div class="estrellas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comentario">
+                            <p>"Estoy extremadamente impresionado con el trabajo de Oscar. Necesitábamos una aplicación móvil compleja para nuestra empresa y no solo entregó a tiempo, sino que también superó nuestras expectativas. La atención al detalle y la creatividad que mostraron fueron excepcionales."
+                            </p>
+                        </div>
+                    </div>
+                    <!-- fin caja2 -->
+
+                    <!-- inicio caja3 -->
+                    <div class="caja">
+                        <div class="infocliente">
+                            <div class="perfil">
+                                <div class="avatar">
+                                    <img src="imagenes/imagen de perfil comentarios/comentario4.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="nombre">
+                                <h1>Luciano Ortiz</h1>
+                                <h2>@luc_ortiz102</h2>
+                            </div>
+                            <div class="estrellas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comentario">
+                            <p>Lola es simplemente asombrosa. Su experiencia en inteligencia artificial es insuperable. Nos ayudó a implementar un sistema de análisis predictivo que transformó por completo nuestra estrategia de ventas. Su habilidad para traducir datos complejos en insights claros y accionables es algo que nunca antes habíamos experimentado. Definitivamente volveremos a trabajar con ella en futuros proyectos</p>
+                        </div>
+                    </div>
+                    <!-- fin caja3 -->
+
+                    <!-- inicio caja4 -->
+                    <div class="caja">
+                        <div class="infocliente">
+                            <div class="perfil">
+                                <div class="avatar">
+                                    <img src="imagenes/imagen de perfil comentarios/comentario3.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="nombre">
+                                <h1>Julieta Paez</h1>
+                                <h2>@julipaezok</h2>
+                            </div>
+                            <div class="estrellas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comentario">
+                            <p>Juan es un verdadero profesional del diseño web. Su creatividad y atención al detalle se reflejan claramente en nuestro sitio. Desde el principio, comprendió nuestra visión y la transformó en un diseño elegante y funcional. La comunicación fue fluida y siempre estuvo dispuesto a adaptarse a nuestras necesidades. Estamos encantados con el resultado y recibimos elogios constantes de nuestros clientes. Trabajar con Juan fue una experiencia excepcional. Lo recomendamos encarecidamente para cualquier proyecto de diseño web.</p>
+                        </div>
+                    </div>
+                    <!-- fin caja4 -->
+                </div>
+            </section>
         </main>
-        <footer>
-            <h4 class="footer">Copyright &copy; 2023. Reservados todos los derechos.</h4>
+        <footer id="contacto">
+            <div class="footerContainer">
+                <h1 class="contactanos">Contáctanos</h1>
+                <div class="redes">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="infoContacto">
+                    <div class="telefono">
+                        <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a>
+                        <span class="texto">+54 11 2345 6789</span>
+                    </div>
+                    <div class="mail">
+                        <a href=""><i class="fa fa-envelope-o " aria-hidden="true"></i></a>
+                        <span class="texto">info@company.com</span>
+                    </div>
+                </div>
+            </div>
+            <h4 class="footerh4">Copyright &copy; 2023. Reservados todos los derechos.</h4>
         </footer>
+
+        <div class="toast fade show position-fixed bottom-0 end-0 p-3" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-dark p-2 text-dark bg-opacity-10">
+              <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#9d27f2"></rect></svg>
+              <strong class="me-auto">Nuevos servicios</strong>
+              <small>Ahora</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              No olvides chequear las novedades en nuestro sector de Servicios.
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>
