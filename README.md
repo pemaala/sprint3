@@ -27,7 +27,7 @@ La tercer sección corresponde a una caja de comentarios con las reseñas hechas
 En el pie de página se muestran las redes sociales, número de contacto, y un pequeño mapa de la ubicación de la empresa. Al mismo tiempo, ofrece un pequeño formulario para usuarios que quieran ser contactados por la empresa.
 
 ## Instalación
-Clonar el repositorio () y abrir el archivo con la extensión de Live Server en Visual Studio.
+Clonar el repositorio (https://pemaala.github.io/sprint3/) y abrir el archivo con la extensión de Live Server en Visual Studio.
 
 ## Paleta de Colores
 
