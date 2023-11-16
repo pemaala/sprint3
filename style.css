@@ -429,16 +429,16 @@ header {
 }
 
 
-.columna {
+.columna { /* cada columna individual */
     width:25%;
 }
 
-.mapa {
+.mapa { /* formato del iframe del mapa */
     height:120px;
     width:250px;
 }
 
-.redes {
+.redes { /* formato de los icons de las redes */
     display: flex;
     justify-content: center;
 }
@@ -467,7 +467,7 @@ header {
 }
 
 
-.infoContacto {
+.infoContacto { /* formato de los datos de contacto como teléfono, dirección, etc */
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 10px;
@@ -482,8 +482,8 @@ header {
     transition: 0.5s;
 }
 
-.form {
-    display:grid;
+.form { /* formato del formulario */
+    display:grid; /* para que los inputs queden alineados uno bajo al otro */
     justify-items: center;
     font-size:14px;
     font-family: Roboto;
@@ -494,18 +494,18 @@ header {
     font-size: 12px;
 }
 
-input {
+input { /* formato de cada input */
     width:230px;
     background-color: rgb(233, 223, 249);
     border: 2px rgb(185, 145, 211) solid;
     padding:5px;
 }
 
-input:focus {
+input:focus { /* formato del input una vez que lo clickeamos para escribir en él */
     background-color: rgb(255, 255, 255);
 }
 
-::placeholder {
+::placeholder { /* formato del texto de ejemplo o informativo */
     padding:10px;
     color: rgba(82, 31, 191, 0.67);
   }
@@ -529,12 +529,12 @@ button:hover {
     transition: 0.3s;
 }
 
-.warnings {
+.warnings { /* formato de los mensajes de advertencia que salen ya sea cuando los datos sean inválidos, o cuando sean válidos */
     color:#eee;
     margin-top:5px;
 }
 
-/* Responsive */
+/* Responsive: se agruparon los elementos que cambiarán en el modo responsive para hacerlo más práctico de editar o revisar, se usaron cinco tamaños */
 
 @media(max-width:1024px){
 
@@ -754,10 +754,6 @@ button:hover {
 
     .fSeccionTitulo {
         font-size:15px;
-    }
-    
-    .contactanos {
-        font-size: 20px;
     }
 
     .infoContacto {
