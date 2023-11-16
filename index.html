@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sprint2</title>
+        <title>Proyecto Final</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
         
     </head>
     <body>
-        <header>
+        <header><!-- Esta es la sección superior de la página, en este caso consistente únicamente de una barra de navegación -->
             <!-- Inicio de la navbar -->
             <div class="logo">
                 <img src="imagenes/cuerpo/logo.png" alt="logo de la compañía" srcset=""><!-- Agrega la imagen del logo y un texto que explica lo que contiene la imagen, para en caso de que no cargue la imagen el usuario sepa qué es lo que no cargó -->
@@ -38,12 +38,16 @@
                 <div></div>
             </label>
         </header>
+        <!-- Fin del header -->
+
+
+        <!-- A partir de aquí se comienza a trabajar en el contenido de la página, que en este caso va a constar de tres secciones, cada una separada de la otra por etiquetas <section>, que estarán nombradas con un id o una clase según sea necesario -->
         <main>
 
-            <!-- Inicio caja de introducción a la página web -->
+            <!-- Inicio caja de introducción a la página web, esta es la primera sección y será identificada con la clase "inicio", el objetivo es presentar una breve descripción de la página-->
             <section class="inicio">
-                <div class="box">
-                    <div class="descripcion">
+                <div class="box"><!-- Se identificará como "box" la caja de bienvenida -->
+                    <div class="descripcion"><!-- Este div se hizo con el fin de poder editar aspectos como el padding o margen de los elementos dentro de la caja -->
                         <!-- Borrado: <img class="img-desc" src="/imagenes/primer sprint/imagen primer sprint.webp" alt="programador" srcset=""> -->
                         <h1  class="titulo-desc">Programando el futuro, un código a la vez</h1>
                         <p>Más de 200 profesionales capacitados para ofrecer eficientes e innovadores servicios de programación.</p>
@@ -56,14 +60,14 @@
             </section>
             <!-- Fin caja de introducción a la página web -->
 
-            <!-- Inicio sección profesionales -->
+            <!-- Inicio sección profesionales, en este caso se utiliza un identificador "profesionales" para nombrar el contenedor principal -->
             <section id="profesionales">
-                <div class="dcontainer">
-                    <!-- título de sección-->
+                <div class="dContainer"><!-- Inicio del contenedor de las tarjetas de los profesionales, la d es porque inicialmente iban a ser "diseñadores", pero se cambió a profesionales para abarcar más áreas de programación -->
+                    <!-- título de la sección-->
                         <h1 class="encabezado">Nuestros Profesionales</h1>
-                    <!-- Tarjeta de diseñador -->
+                    <!-- Tarjeta de profesional, cada una de estas incluye información específica de cada uno de los programadores-->
                     <div class="dcard">
-                        <img class="davatar" src="imagenes/imagen de perfil programadores/programador1.jpg" alt="" srcset="">
+                        <img class="davatar" src="imagenes/imagen de perfil programadores/programador1.jpg" alt="" srcset=""><!-- Etiqueta de imagen, para insertar la foto de cada profesional-->
                         <div class="dinfo">
                             <h1>Oscar Codefield</h1>
                             <h2><u>Área</u>: Software Empresarial</h2>
@@ -73,9 +77,9 @@
                             <button class="btn"><a href="">Más información</a></button>
                         </div>
                     </div>
-                    <!-- Fin de tarjeta de diseñador -->
+                    <!-- Fin de tarjeta de profesional -->
 
-                    <!-- Tarjeta de diseñador -->
+                    <!-- Tarjeta de profesional -->
                     <div class="dcard">
                         <img class="davatar" src="imagenes/imagen de perfil programadores/programadora1.jpg" alt="" srcset="">
                         <div class="dinfo">
@@ -87,9 +91,9 @@
                             <button class="btn"><a href="">Más información</a></button>
                         </div>
                     </div>
-                    <!-- Fin de tarjeta de diseñador -->
+                    <!-- Fin de tarjeta de profesional -->
 
-                    <!-- Tarjeta de diseñador -->
+                    <!-- Tarjeta de profesional -->
                     <div class="dcard">
                         <img class="davatar" src="imagenes/imagen de perfil programadores/programador2.jpg" alt="" srcset="">
                         <div class="dinfo">
@@ -101,9 +105,9 @@
                             <button class="btn"><a href="">Más información</a></button>
                         </div>
                     </div>
-                    <!-- Fin de tarjeta de diseñador -->
+                    <!-- Fin de tarjeta de profesional -->
 
-                    <!-- Tarjeta de diseñador -->
+                    <!-- Tarjeta de profesional -->
                     <div class="dcard">
                         <img class="davatar" src="imagenes/imagen de perfil programadores/programadora2.jpg" alt="" srcset="">
                         <div class="dinfo">
@@ -115,21 +119,21 @@
                             <button class="btn"><a href="">Más información</a></button>
                         </div>
                     </div>
-                    <!-- Fin de tarjeta de diseñador -->
+                    <!-- Fin de tarjeta de profesional -->
                 </div>
             </section>
 
-            <!-- Fin sección diseñadores -->
+            <!-- Fin sección profesionales -->
 
              
             <!-- Inicio sección servicios -->
             <section id="servicios">
                 <!-- Título de la sección -->
                 <h1 class="encabezado">Nuestros servicios</h1>
-                <div class="scontainer">
+                <div class="scontainer"><!-- Contenedor principal de todas las tarjetas, se creó el div para diferenciarlo de la sección y poder agrupar estos elementos sin afectar, por ejemplo, el título o encabezado-->
                     <!-- Tarjeta de servicio -->
-                    <div class="scard">
-                        <i class="fa fa-html5" style="font-size:24px;"></i>
+                    <div class="scard"><!-- La s en los divs de esta sección corresponde a "servicios"-->
+                        <i class="fa fa-html5" style="font-size:24px;"></i><!-- En este caso, aplicar el estilo al icon (el tamaño) es más cómodo desde el HTML por si alguno de los icons se ve mejor más grande o más pequeño que el resto -->
                         <h1  class="titulo-scard">Desarrollo Web</u></h1>
                         <p>Creación de sitios web y aplicaciones web interactivas.</p>
                     </div>
@@ -179,12 +183,13 @@
             </section>
             <!-- Fin sección servicios -->
 
+            <!-- Inicio de la sección de reseñas o comentarios-->
             <section id="reseñas">
                 <h1 class="encabezado">Ellos nos eligen</h1>
-                <div class="cdc">  <!-- cdc: caja de comentarios -->
+                <div class="cdc">  <!-- cdc: caja de comentarios, de nuevo se diferenció con un div para poder modificar paddings, márgenes, etc, sin modificar la sección entera -->
                     <!-- inicio caja1 -->
                     <div class="caja">
-                        <div class="infocliente">
+                        <div class="infocliente"><!--- Este div incluye información de quien deja el comentario, va aparte del comentario que dejó, porque la organización es distinta -->
                             <div class="perfil">
                                 <div class="avatar">
                                     <img src="imagenes/imagen de perfil comentarios/comentario1.jpg" alt="" srcset="">
@@ -194,7 +199,7 @@
                                 <h1>Natalia Rodriguez</h1>
                                 <h2>@natrodriguez</h2>
                             </div>
-                            <div class="estrellas">
+                            <div class="estrellas"><!-- Mostrará la puntuación de la reseña, en este caso se muestran reseñas positivas, así que se usaron sólo icons de estrellas con relleno -->
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -294,20 +299,21 @@
 
         <!-- Inicio del Footer-->
         <footer id="contacto">
-            <div class="footerContainer">
-                <h1 class="contactanos">Medios de contacto</h1>
-                <div class="columnas">
-                    <div class="columna">
-                        <!-- iframe de mapa -->
+            <div class="footerContainer"><!-- Necesario para manejar correctamente los márgenes -->
+                <h1 class="encabezado">Medios de contacto</h1>
+                <div class="columnas"> <!-- Con este div se trabajan las columnas como conjunto, por ejemplo para centrarlas -->
+                    <div class="columna"><!-- Con este div se puede dar formato a cada columna con respecto a las otras, por ejemplo el espacio entre ellas -->
+                        <!-- iframe de mapa, se agregó para cumplir con las consignas, simplemente copiando el código que nos da googlemaps y adaptándolo a la página -->
                         <h4 class="fSeccionTitulo">Nuestro local</h2>
                         <div class="infoContacto">
                             <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-                            <span class="texto">Caracas 5291, Villa Pueyrredon</span>
+                            <span class="texto">Caracas 5291, Villa Pueyrredon</span><!-- Dirección elegida al azar -->
                           </div>
-                          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.6589779343806!2d-58.49955659408533!3d-34.5769400864397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb650db082e91%3A0x4207afbfd60c5572!2sCaracas%205291%2C%20C1419ELF%20Villa%20Pueyrredon%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1700086419177!5m2!1sen!2sar" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.6589779343806!2d-58.49955659408533!3d-34.5769400864397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb650db082e91%3A0x4207afbfd60c5572!2sCaracas%205291%2C%20C1419ELF%20Villa%20Pueyrredon%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1700086419177!5m2!1sen!2sar" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    </div>
                     <div class="columna">
                         <h4 class="fSeccionTitulo">Sigue Nuestras redes</h2>
-                        <div class="redes"> <!-- Se anexaron enlaces externos para cumplir con la pauta solicitada en las consignas del Sprint, de ser una página real, cada enlace llevaría a la red social específica de la empresa y no sólo a su página principal -->
+                        <div class="redes"> <!-- Se anexaron enlaces externos para cumplir con la pauta solicitada en las consignas, de ser una página real, cada enlace llevaría a la red social específica de la empresa y no sólo a su página principal -->
                             <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             <a href="https://www.tumblr.com/"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
@@ -324,14 +330,15 @@
                     </div>
                     <div class="columna">
                         <!-- Inicio del Formulario, al que se estará aplicando JavaScript para que sea validado -->
-                        <form action="" method="POST" id="form">
-                            <div class="form"><!-- Se utiliza un div para poder darle formato con mayor comodidad en el CSS -->
+                        <form id="form">
+                            <div class="form"><!-- Se utiliza un div para poder darle formato con mayor comodidad -->
                                 <h4 class="fSeccionTitulo">Dejanos tu contacto</h2>
                                 <p class="formInfo">Un profesional se pondrá en contacto contigo para brindarte ayuda personalizada</p>
-                                <input type="text" placeholder="Nombre y Apellido" id="nombre" required>
-                                <input type="text" placeholder="ejemplo@email.com" id="correo" required><!-- Crea un input del tipo texto con un placeholder, que se usa para describir lo que va dentro del input, en este caso, el correo. Al agregar required, evitamos que intenten enviar el formulario sin añadir el e-mail correspondiente. Para que el e-mail cumpla con un formato en específico, se usa java -->
-                                <p class="warnings" id="warnings"></p><!-- Se coloca para posicionar las warnings creadas en java -->
-                                <button type="submit">enviar</button>                            </div>
+                                <input type="text" placeholder="Nombre y Apellido" id="nombre" required><!-- Crea un input del tipo texto con un placeholder, que se usa para describir lo que va dentro del input, en este caso, el nombre o el correo. Al agregar required, evitamos que intenten enviar el formulario sin añadir el dato correspondiente. Lo que se exige de cada dato se especifica en Java -->
+                                <p class="warnings" id="warnings"></p><!-- Se coloca para posicionar las warnings o mensajes de advertencia creadas en java, y también darle formato en CSS -->
+                                <input type="text" placeholder="ejemplo@email.com" id="correo" required>
+                                <button type="submit">enviar</button>                            
+                            </div>
                         </form>
                         <!-- Fin del Formulario -->
                     </div>
