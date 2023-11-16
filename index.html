@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +13,19 @@
         <script src="https://kit.fontawesome.com/63cce3f8bd.js" crossorigin="anonymous"></script>
         <!-- Código para Bootstrap: elementos usados: Badge "NEW" en el último heading de la sección de servicios, y Toast -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
         
     </head>
     <body>
         <header>
+            <!-- Inicio de la navbar -->
             <div class="logo">
-                <img src="imagenes/cuerpo/logo.png" alt="logo de la compañía" srcset="">
+                <img src="imagenes/cuerpo/logo.png" alt="logo de la compañía" srcset=""><!-- Agrega la imagen del logo y un texto que explica lo que contiene la imagen, para en caso de que no cargue la imagen el usuario sepa qué es lo que no cargó -->
             </div>
-            <input type="checkbox" id="nav_check" hidden>
+            <!-- Inicio menú hamburguesa  -->
+            <input type="checkbox" id="nav_check" hidden><!-- El checkbox estará oculto de la página inicial y se activará en modo responsive -->
             <nav>
                 <ul class="navi">
-                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#inicio" class="active">Inicio</a></li><!-- Los links de la navegación son links internos, no redirigen a otra página separada -->
                     <li><a href="#profesionales">Profesionales</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#reseñas">Reseñas</a></li>
@@ -32,7 +33,7 @@
                 </ul>
             </nav>
             <label for="nav_check" class="hamburguer">
-                <div></div>
+                <div></div><!-- Crearán las  tres líneas del menú hamburguesa  -->
                 <div></div>
                 <div></div>
             </label>
@@ -59,7 +60,7 @@
             <section id="profesionales">
                 <div class="dcontainer">
                     <!-- título de sección-->
-                        <h1 class="encabezado1">Nuestros Profesionales</h1>
+                        <h1 class="encabezado">Nuestros Profesionales</h1>
                     <!-- Tarjeta de diseñador -->
                     <div class="dcard">
                         <img class="davatar" src="imagenes/imagen de perfil programadores/programador1.jpg" alt="" srcset="">
@@ -104,7 +105,7 @@
 
                     <!-- Tarjeta de diseñador -->
                     <div class="dcard">
-                        <img class="davatar" src="/imagenes/imagen de perfil programadores/programadora2.jpg" alt="" srcset="">
+                        <img class="davatar" src="imagenes/imagen de perfil programadores/programadora2.jpg" alt="" srcset="">
                         <div class="dinfo">
                             <h1>Sofía Scriptwood</h1>
                             <h2><u>Área</u>: Desarrollo de juegos</h2>
@@ -124,8 +125,8 @@
             <!-- Inicio sección servicios -->
             <section id="servicios">
                 <!-- Título de la sección -->
+                <h1 class="encabezado">Nuestros servicios</h1>
                 <div class="scontainer">
-                    <h1 class="encabezado2">Nuestros servicios</h1>
                     <!-- Tarjeta de servicio -->
                     <div class="scard">
                         <i class="fa fa-html5" style="font-size:24px;"></i>
@@ -179,9 +180,7 @@
             <!-- Fin sección servicios -->
 
             <section id="reseñas">
-                <div class="comentarios">
-                    <h1>Ellos nos eligen</h1>
-                </div>
+                <h1 class="encabezado">Ellos nos eligen</h1>
                 <div class="cdc">  <!-- cdc: caja de comentarios -->
                     <!-- inicio caja1 -->
                     <div class="caja">
@@ -288,33 +287,61 @@
                     </div>
                     <!-- fin caja4 -->
                 </div>
+            <!-- fin caja de comentarios -->
             </section>
         </main>
+
+
+        <!-- Inicio del Footer-->
         <footer id="contacto">
             <div class="footerContainer">
-                <h1 class="contactanos">Contáctanos</h1>
-                <div class="redes">
-                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-tumblr" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-
-                <div class="infoContacto">
-                    <div class="telefono">
-                        <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a>
-                        <span class="texto">+54 11 2345 6789</span>
+                <h1 class="contactanos">Medios de contacto</h1>
+                <div class="columnas">
+                    <div class="columna">
+                        <!-- iframe de mapa -->
+                        <h4 class="fSeccionTitulo">Nuestro local</h2>
+                        <div class="infoContacto">
+                            <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                            <span class="texto">Caracas 5291, Villa Pueyrredon</span>
+                          </div>
+                          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.6589779343806!2d-58.49955659408533!3d-34.5769400864397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb650db082e91%3A0x4207afbfd60c5572!2sCaracas%205291%2C%20C1419ELF%20Villa%20Pueyrredon%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1700086419177!5m2!1sen!2sar" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <div class="columna">
+                        <h4 class="fSeccionTitulo">Sigue Nuestras redes</h2>
+                        <div class="redes"> <!-- Se anexaron enlaces externos para cumplir con la pauta solicitada en las consignas del Sprint, de ser una página real, cada enlace llevaría a la red social específica de la empresa y no sólo a su página principal -->
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.tumblr.com/"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="infoContacto">
+                        <h4 class="fSeccionTitulo">Otros medios de contacto</h2>
+                                <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a>
+                                <span class="texto">+54 11 2345 6789</span><br>
+                                <a href=""><i class="fa fa-envelope-o " aria-hidden="true"></i></a>
+                                <span class="texto">info@company.com</span>
+                        </div>
                     </div>
-                    <div class="mail">
-                        <a href=""><i class="fa fa-envelope-o " aria-hidden="true"></i></a>
-                        <span class="texto">info@company.com</span>
+                    <div class="columna">
+                        <!-- Inicio del Formulario, al que se estará aplicando JavaScript para que sea validado -->
+                        <form action="" method="POST" id="form">
+                            <div class="form"><!-- Se utiliza un div para poder darle formato con mayor comodidad en el CSS -->
+                                <h4 class="fSeccionTitulo">Dejanos tu contacto</h2>
+                                <p class="formInfo">Un profesional se pondrá en contacto contigo para brindarte ayuda personalizada</p>
+                                <input type="text" placeholder="Nombre y Apellido" id="nombre" required>
+                                <input type="text" placeholder="ejemplo@email.com" id="correo" required><!-- Crea un input del tipo texto con un placeholder, que se usa para describir lo que va dentro del input, en este caso, el correo. Al agregar required, evitamos que intenten enviar el formulario sin añadir el e-mail correspondiente. Para que el e-mail cumpla con un formato en específico, se usa java -->
+                                <p class="warnings" id="warnings"></p><!-- Se coloca para posicionar las warnings creadas en java -->
+                                <button type="submit">enviar</button>                            </div>
+                        </form>
+                        <!-- Fin del Formulario -->
                     </div>
                 </div>
             </div>
             <h4 class="footerh4">Copyright &copy; 2023. Reservados todos los derechos.</h4>
         </footer>
+        <!-- Fin del Footer-->
 
+        <!-- Inicio del Toast de Bootstrap -->
         <div class="toast fade show position-fixed bottom-0 end-0 p-3" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header bg-dark p-2 text-dark bg-opacity-10">
               <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#9d27f2"></rect></svg>
@@ -326,6 +353,9 @@
               No olvides chequear las novedades en nuestro sector de Servicios.
             </div>
         </div>
+        <!-- Código para enlazar bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!-- Código para enlazar el archivo .js-->
+        <script src="code.js"></script>
     </body>
 </html>

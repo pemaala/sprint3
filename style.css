@@ -19,6 +19,21 @@ body::-webkit-scrollbar-thumb{
     background: #e68d33;
 }
 
+.encabezado {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 50px;
+}
+
+@media(max-width:480px){
+    .encabezado {
+        font-size: 20px;
+    
+    }
+}
+
+
 /* Header y navegación */
 
 header {
@@ -500,27 +515,20 @@ header {
 
 /* Tarjetas de servicios */
 
+
+
 #servicios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(242, 93, 39);
+    text-align: center;
+    padding-bottom:100px;
 }
 
 .scontainer {
     display: flex;
-    flex-flow: row wrap;
-    width: 80%;
-    justify-content: space-around;
-    padding: 0 15px 100px;
-}
-
-.encabezado2 {
-    text-justify: center;
-    font-size: 40px;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 5% 30% 5% 30%;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:70%;
+    margin:auto;
 }
 
 .scard {
@@ -554,28 +562,10 @@ header {
 
 /* Caja de comentarios */
 
-.comentarios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.comentarios h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom:0;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 40px;
-}
-
 #reseñas {
-    margin: 0px;
-    padding: 50px;
-    font-family: 'Poppins';
-    box-sizing: border-box;
     background: rgb(242, 139, 12);
+    text-align: center;
+    padding-bottom:100px;
 }
 
 #reseñas a {
@@ -589,8 +579,8 @@ header {
     background-color: #c56e6e;
     width:50%;
     height: 500px;
-    margin: 100px auto;
     overflow: auto;
+    margin:auto;
 }
 
 .cdc::-webkit-scrollbar{
@@ -610,6 +600,7 @@ header {
     background-color: rgb(255, 255, 255);
     padding: 30px;
     margin: 30px;
+    font-family: 'Poppins';
 }
 
 .infocliente {
@@ -729,20 +720,40 @@ header {
 #contacto {
     background-color:rgb(81, 31, 191);
     padding:1px;
-    margin-bottom:0px;
     text-align: center;
 }
 
 .footerContainer {
     width: 100%;
+    margin-bottom:50px;
+}
+
+.fSeccionTitulo {
+    font-size:20px;
+    color:rgb(198, 185, 243);
+}
+
+.columnas {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contactanos {
     color: rgb(255, 255, 255);
     font-size: 30px;
-    padding: 30px 0 0 0;
+    padding: 30px 0 30px 0;
     text-transform: uppercase;
 
+}
+
+.columna {
+    width:25%;
+}
+
+.mapa {
+    height:120px;
+    width:250px;
 }
 
 .redes {
@@ -773,9 +784,10 @@ header {
     color: #eee;
 }
 
+
 .infoContacto {
     text-align: center;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 10px;
 }
 
@@ -786,4 +798,89 @@ header {
 .infoContacto a:hover {
     color: rgb(242, 162, 12);
     transition: 0.5s;
+}
+
+.form {
+    display:grid;
+    justify-items: center;
+    font-size:14px;
+    font-family: Roboto;
+}
+
+.formInfo {
+    color:#fff;
+    font-size: 12px;
+}
+
+input {
+    width:230px;
+    background-color: rgb(233, 223, 249);
+    border: 2px rgb(185, 145, 211) solid;
+    padding:5px;
+}
+
+input:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+::placeholder {
+    padding:10px;
+    color: rgba(82, 31, 191, 0.67);
+  }
+
+form button {
+    width:100px;
+    text-align: center;
+    margin-top:10px;
+    border: 2px rgba(255, 255, 255, 0.792) solid;
+    border-radius: 20px;
+    background-color:rgb(81, 31, 191);
+    color:#fff;
+    font-size:12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color:rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.warnings {
+    color:#eee;
+    margin-top:5px;
+}
+
+/* Responsive */
+
+@media(max-width:1024px){
+
+    .columnas {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:768px){
+
+    .columna {
+        width:100%;
+    }
+}
+
+@media(max-width:480px){
+    .fSeccionTitulo {
+        font-size:15px;
+    }
+    
+    .contactanos {
+        font-size: 20px;
+    }
+
+    .infoContacto {
+        font-size:14px;
+    }
+    
+
 }
